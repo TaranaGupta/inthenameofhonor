@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Inthenameofhonor#india</title>
+        <style type="text/css">
+            #header {
+            margin-top: 50px;
+            }
+            
+            #sometitle {
+                font-family: "Helvetica Neue";
+                font-weight: 100;
+                font-size: 30px;
+                margin-left: .5%;
+                margin-right: .5%;
+            }
+        
+        
+            .video-box {
+                background-color: #000000;
+                padding: .5% .5% .5% .5%;
+                width: 31.3333333333333333%;
+                float: left;
+                margin-left: .5%;
+                margin-right: .5%;
+            }
+        
+            video {
+                width: 100%;
+            }
+        </style>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    </head>
+    <body>
+
+<header>
+    <a href="http://www.html-5-tutorial.com/"><img src="images/html-5-tutorial.gif" alt="HTML5 tutorial - The paragraph tag." height="200" width="1280"></a>
+    </header>
+
+<div id="container">
+
+    <div id="header">
+    <h2>Header!</h2>
+    </div>
+
+    <div id="video-container">
+        <div class="video-box">
+            <script src="http://popcornjs.org/code/dist/popcorn-complete.min.js"></script>
+ 
+    <script>
+      // ensure the web page (DOM) has loaded
+      document.addEventListener("DOMContentLoaded", function () {
+ 
+           // Create a popcorn instance by calling the Youtube player plugin
+         var example = Popcorn.youtube(
+           '#video',
+           'http://www.youtube.com/watch?v=CxvgCLgwdNk' );
+ 
+         // add a footnote at 2 seconds, and remove it at 6 seconds
+         example.footnote({
+           start: 2,
+           end:7,
+           text: "Pop!",
+           target: "footnotediv"
+         });
+ 
+         // play the video right away
+         example.play();
+ 
+      }, false);
+    </script>
+    
+        </div>
+        <div class="video-box">
+            <img src="___">
+        </div>
+        <div class="video-box">
+            <video id="video3" src="http://us.cnn.com/video/?iid=article_sidebar#/video/world/2013/01/10/pkg-kapur-india-male-mindset.cnn" controls></video>
+        </div>
+    </div>
+    
+    <h3 id="sometitle">In The Name of Honor</h3>
+
+    <div id="leftbox">
+        <a class="twitter-timeline" href="https://twitter.com/search?q=%23vday" data-widget-id="302180437902630913">Tweets about "#vday"</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+    </div>
+    <div id="rightbox">
+    </div>
+
+</div>
+
+
+
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.0.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)}(document,'script'));
+        </script>
+    </body>
+</html>
