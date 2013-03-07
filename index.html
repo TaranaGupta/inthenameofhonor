@@ -12,8 +12,8 @@
             
             #sometitle {
                 font-family: "Helvetica Neue";
-                font-weight: 200;
-                font-size: 40px;
+                font-weight: 100;
+                font-size: 50px;
                 margin-left: .5%;
                 margin-right: .5%;
                 color: #000000;
@@ -25,6 +25,16 @@
                 background-color: #000000;
                 padding: .5% .5% .5% .5%;
                 width: 31.3333333%;
+                height: 50%;
+                float: left;
+                margin-left: .5%;
+                margin-right: .5%;
+            }
+            .space-box {
+                background-color: #000000;
+                padding: .5% .5% .5% .5%;
+                width: 100%;
+                height: 50%;
                 float: left;
                 margin-left: .5%;
                 margin-right: .5%;
@@ -32,13 +42,12 @@
             
             
             .pvnx {
-                
                 margin-left: .5%;
                 margin-right: .5%;
                 padding: 10px 0 0 0;
-                text-align: right;
+                /*text-align: right;*/
                 display: inline-block;
-                float: right;
+                 
                 text-decoration: none;
             }
             #about {
@@ -49,6 +58,8 @@
                 margin-left: .5%;
                 margin-right: .5%;
                 color: #000000;
+                text-decoration: none;
+ 
             }
                 
         
@@ -63,10 +74,19 @@
             #comments {
                 font-family: "Helvetica Neue";
                 font-weight: 100;
+                font-size: 60px;
+                margin-left: .5%;
+                margin-right: .5%;
+            }
+            
+            #sharestories {
+                font-family: "Helvetica Neue";
+                font-weight: 100;
                 font-size: 40px;
                 margin-left: .5%;
                 margin-right: .5%;
             }
+            
              #leftbox{
                 font-family: "Helvetica Neue";
                 font-weight: 100;
@@ -107,11 +127,11 @@
         
          <script src="http://popcornjs.org/code/dist/popcorn-complete.min.js"></script>
          <script>
-      // ensure the web page (DOM) has loaded
-      document.addEventListener("DOMContentLoaded", function () {
+         // ensure the web page (DOM) has loaded//PopCorn stuff
+          document.addEventListener("DOMContentLoaded", function () {
  
            // Create a popcorn instance by calling the Youtube player plugin
-         var example = Popcorn.youtube(
+          var example = Popcorn.youtube(
            '#video',
            'http://www.youtube.com/watch?v=rAEbFapIUV0' );
  
@@ -133,11 +153,11 @@
     <body>
 
 <header>
-    <a href="http://#inthenameof.com/"><img src="interface/header.png" alt="#InTheNameOf#India." height="150" width="1280"></a>
+    <a href="http://#inthenameof.com/"><img src="interface/inthenameofhonorTitle.png" alt="#InTheNameOf#India." height="100%" width="100%"></a>
     </header>
-    <h3 id ="about"> 
+    <h2 id ="about"> 
     <nav><a href="http://www.explore.com/">Explore</a>  <a href="http://www.about.com">About</a>  <a href="http://www.How to participate?.com">How to participate?</a></li>
-    </nav></h3>
+    </nav></h2>
     
     <div id="container">
     <div class="video-box" height="440">
@@ -153,9 +173,32 @@
             <img src="img/Punjab_sucide.jpg" alt="I was wonded2.jpg" width="100%" height="100%">
         </div>
         
+        <div class="video-box"><a href="http://www.hindustantimes.com/Entertainment/Tabloid/Sunny-Leone-tweets-controversial-rape-comment/Article1-1005811.aspx">
+            <img src="img/sunny Leone comment.jpg" alt="I was wonded.jpg" width="100%" height="100%">
+        </div>
+
+        <div class="video-box"><a href="http://www.guardian.co.uk/world/2013/feb/21/india-violence-rape-murder-girls">
+            <img src="img/three girls raped and murdered.jpg" alt="I was wonded2.jpg" width="100%" height="100%">
+        </div>
+         <div class="video-box"><a href="http://india.blogs.nytimes.com/2012/03/05/meet-the-superheros-of-delhi/">
+            <img src="img/MeettheSuperheroesofDelhi.jpg" alt="I was wonded2.jpg" width="100%" height="100%">
+        </div>
+        
+        <div id="container">
+    <div class="video-box" height="440">
+    <div id="video">
+    </div>
+    </div>
+        
+    <div class="video-box"><a href="https://twitter.com/WomanStats/status/298532752528130048">
+        <img src="img/police.jpg" alt="I was wonded2.jpg" width="100%" height="100%">
+    </div>
+     <div class="video-box"><a href="http://us.cnn.com/video/?iid=article_sidebar#/video/world/2013/01/10/pkg-kapur-india-male-mindset.cnn">
+        <img src="img/changingmindset.png" alt="I was wonded2.jpg" width="100%" height="100%">
+    </div>
    
-    <h5 id="h5">Click onlinks to know more</h5>
-    <h2 id="sometitle">#InTheNameOf#Honor</h2>
+    
+    
     <nav class="pvnx"><a href="previouspg.html"><img src="interface/left_arrow.png" alt="Previous" height="40" width="40"></a>
     <a href="nextpg.html"><img src="interface/right_arrow.png" alt="Next height="40" width="40"></a></a></nav>
 
@@ -166,8 +209,9 @@
 </div>
     
 
-<h2 id="comments">Comments</h2>
-<p  id="share" >share your comments/stories </p>
+<p id="comments">Comments</p>
+<p id="sharestories" >Share your stories & 
+I promise to put it on the time-line</p>
 
 
 
