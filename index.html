@@ -6,6 +6,11 @@
         <title>Inthenameofhonor#india</title>
         <style type="text/css">
             
+            
+            a{
+                color: black;
+            }
+            
             #header {
             margin-top: 50px;
             }
@@ -23,12 +28,12 @@
         
             .video-box {
                 background-color: #000000;
-                padding: .5% .5% .5% .5%;
+                padding: .5% .5% .4% .5%;
                 width: 31.3333333%;
                 height: 50%;
                 float: left;
-                margin-left: .5%;
-                margin-right: .5%;
+                margin: .5% .5% .5% .5%;
+                /*margin-right: .5%;*/
             }
             .space-box {
                 background-color: #000000;
@@ -155,7 +160,7 @@
 <header>
     <a href="http://#inthenameof.com/"><img src="interface/inthenameofhonorTitle.png" alt="#InTheNameOf#India." height="100%" width="100%"></a>
     </header>
-    <h2 id ="about"> 
+    <h2 id ="headerBar"> 
     <nav><a href="http://www.explore.com/">Explore</a>  <a href="http://www.about.com">About</a>  <a href="http://www.How to participate?.com">How to participate?</a></li>
     </nav></h2>
     
@@ -184,11 +189,6 @@
             <img src="img/MeettheSuperheroesofDelhi.jpg" alt="I was wonded2.jpg" width="100%" height="100%">
         </div>
         
-        <div id="container">
-    <div class="video-box" height="440">
-    <div id="video">
-    </div>
-    </div>
         
     <div class="video-box"><a href="https://twitter.com/WomanStats/status/298532752528130048">
         <img src="img/police.jpg" alt="I was wonded2.jpg" width="100%" height="100%">
@@ -197,6 +197,16 @@
         <img src="img/changingmindset.png" alt="I was wonded2.jpg" width="100%" height="100%">
     </div>
    
+     <div class="video-box"><a href="https://twitter.com/WomanStats/status/298532752528130048">
+        <img src="img/police.jpg" alt="I was wonded2.jpg" width="100%" height="100%">
+    </div>
+     <div class="video-box"><a href="http://us.cnn.com/video/?iid=article_sidebar#/video/world/2013/01/10/pkg-kapur-india-male-mindset.cnn">
+        <img src="img/changingmindset.png" alt="I was wonded2.jpg" width="100%" height="100%">
+    </div>
+      </div>
+     <div class="video-box"><a href="http://www.nytimes.com/2012/12/29/opinion/rape-in-india.html?_r=0">
+        <img src="img/World largest democracy.jpg" alt="I was wonded2.jpg" width="100%" height="100%">
+    </div>
     
     
     <nav class="pvnx"><a href="previouspg.html"><img src="interface/left_arrow.png" alt="Previous" height="40" width="40"></a>
@@ -213,7 +223,17 @@
 <p id="sharestories" >Share your stories & 
 I promise to put it on the time-line</p>
 
+<% for thisPost in @posts %>
+      <h1><%= thisPost.title %></h1>
+      <p><%= thisPost.body %></p>
+      <a href="http://itp.nyu.edu/~rsm347/sinatra/myblog/blog/<%= thisPost.id %>">Permalink</a>
+<% end %>
 
+<form action="http://itp.nyu.edu/~rsm347/sinatra/myblog/blog/save" method="POST">
+  <p><input type="text" name="title" value="Write your title here" /></p>
+  <p><textarea name="body">Write your blog post here</textarea></p>
+  <p><input type="submit" value="Save your post" /></p>
+</form>
 
 
 <div id="disqus_thread"></div>
